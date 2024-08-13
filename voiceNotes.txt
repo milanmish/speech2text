@@ -1,0 +1,1 @@
+I'm learning to write python so I made this voice recognition software so you can hit play speak and it will record whatever you say in a separate text document

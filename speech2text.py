@@ -15,7 +15,7 @@ try:
     f = open("voiceNotes.txt", "a")
     f.write(text)
     f.close()
-    print("you said: " + text)
+    print("You said: " + text)
 
 
 except sr.UnknownValueError:
