@@ -12,7 +12,11 @@ with sr.Microphone() as source:
 try:
     print("Recognizing...")
     text = recognizer.recognize_google(audio)
-    print("You said:" + text)
+    f = open("voiceNotes.txt", "a")
+    f.write(text)
+    f.close()
+
+
 except sr.UnknownValueError:
     print("Google Speech Recognition could not understand audio")
 except sr.RequestError as e:
